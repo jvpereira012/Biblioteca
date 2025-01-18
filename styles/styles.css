@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: rgba(19, 17, 17, 0.795);
+    --white: rgb(255, 255, 255);
+}
+
+.mainClass {
+    width: 100vw;
+    height: 480px;
+    flex-direction: column;
+    font-family: "Roboto", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: 50px;
+}
+
+h1 {
+    color: var(--black);
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    font-size: 48px;
+    font-weight: 700;
+    text-wrap: 15px;
+}
+
+h2{
+    color: var(--black);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    text-wrap: 15px;
+}
+
+.buttonMainClass{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 15;
+    margin: 10;
+}
+
+#boxOne{
+    font-family: "Roboto",serif;
+    height: 200px;
+    width:200px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--white);
+    text-align: center;
+    font-weight: 500;
+    border: solid var(--black) 8px;
+    background-color:  #0000CD;
+}
+#boxTwo{
+    font-family: "Roboto",serif;
+    height: 200px;
+    width:200px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--white);
+    text-align: center;
+    font-weight: 500;
+    border: solid var(--black) 8px;
+    background-color:  rgb(178,34,34);
+}
+#boxTree{
+    font-family: "Roboto",serif;
+    height: 200px;
+    width:200px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--white);
+    text-align: center;
+    font-weight: 500;
+    border: solid var(--black) 8px;
+    background-color:  rgb(255,255,0);
+}
+#boxFour{
+    font-family: "Roboto",serif;
+    height: 200px;
+    width:200px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--white);
+    text-align: center;
+    font-weight: 500;
+    border: solid var(--black) 8px;
+    background-color:  rgb(43, 255, 0);
+}
+
+a{
+    outline: none
+}
+
+@media(max-width:720px){
+    .buttonMainClass{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        padding: 15;
+        margin: 10;
+    }
+}
