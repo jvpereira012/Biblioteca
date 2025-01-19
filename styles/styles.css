@@ -21,25 +21,24 @@
     flex-wrap: 50px;
 }
 
-h1 {
+h1,h2 {
     color: var(--black);
     text-align: center;
     padding: 10px;
     margin: 5px;
+    font-weight: 700;
+    text-wrap: wrap;
+}
+
+h1 {
     font-size: 48px;
-    font-weight: 700;
-    text-wrap: 15px;
 }
 
-h2{
-    color: var(--black);
-    text-align: center;
+h2 {
     font-size: 32px;
-    font-weight: 700;
-    text-wrap: 15px;
 }
 
-.buttonMainClass{
+.buttonMainClass {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -47,69 +46,93 @@ h2{
     margin-top: 40px;
     padding: 15;
     margin: 10;
+    gap: 15px;
 }
 
-#boxOne{
-    font-family: "Roboto",serif;
+#boxOne {
+    font-family: "Roboto", serif;
     height: 200px;
-    width:200px;
+    width: 200px;
     text-align: center;
     font-size: 24px;
     color: var(--white);
     text-align: center;
     font-weight: 500;
     border: solid var(--black) 8px;
-    background-color:  #0000CD;
+    background-color: #0000CD;
 }
-#boxTwo{
-    font-family: "Roboto",serif;
+
+
+#boxTwo {
+    font-family: "Roboto", serif;
     height: 200px;
-    width:200px;
+    width: 200px;
     text-align: center;
     font-size: 24px;
     color: var(--white);
     text-align: center;
     font-weight: 500;
     border: solid var(--black) 8px;
-    background-color:  rgb(178,34,34);
-}
-#boxTree{
-    font-family: "Roboto",serif;
-    height: 200px;
-    width:200px;
-    text-align: center;
-    font-size: 24px;
-    color: var(--white);
-    text-align: center;
-    font-weight: 500;
-    border: solid var(--black) 8px;
-    background-color:  rgb(255,255,0);
-}
-#boxFour{
-    font-family: "Roboto",serif;
-    height: 200px;
-    width:200px;
-    text-align: center;
-    font-size: 24px;
-    color: var(--white);
-    text-align: center;
-    font-weight: 500;
-    border: solid var(--black) 8px;
-    background-color:  rgb(43, 255, 0);
+    background-color: rgb(178, 34, 34);
 }
 
 a{
-    outline: none
+    
+    text-decoration: none;
+    outline: none;
+    color: var(--white);
+    font-weight: 500;
 }
 
-@media(max-width:720px){
-    .buttonMainClass{
-        display: flex;
+#boxTree {
+    font-family: "Roboto", serif;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--white);
+    text-align: center;
+    font-weight: 500;
+    border: solid var(--black) 8px;
+    background-color: rgb(47, 4, 87);
+}
+
+#boxFour {
+    font-family: "Roboto", serif;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--white);
+    text-align: center;
+    font-weight: 500;
+    border: solid var(--black) 8px;
+    background-color: rgb(43, 255, 0);
+}
+
+
+@media(max-width:720px) {
+    .buttonMainClass {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
-        padding: 15;
-        margin: 10;
+    }
+
+    #boxOne {
+        height: 100px;
+        width: 100px;
+    }
+
+    #boxTwo {
+        height: 100px;
+        width: 100px;
+    }
+
+    #boxTree {
+        height: 100px;
+        width: 100px;
+    }
+
+    #boxFour {
+        height: 100px;
+        width: 100px;
     }
 }
