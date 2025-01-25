@@ -23,7 +23,6 @@
 
 h1,h2 {
     color: var(--black);
-    text-align: center;
     padding: 10px;
     margin: 5px;
     font-weight: 700;
@@ -60,8 +59,12 @@ h2 {
     font-weight: 500;
     border: solid var(--black) 8px;
     background-color: #0000CD;
+    transition: 0.3s;
 }
 
+#boxOne:hover{
+    zoom: 1.15;
+}
 
 #boxTwo {
     font-family: "Roboto", serif;
@@ -74,10 +77,14 @@ h2 {
     font-weight: 500;
     border: solid var(--black) 8px;
     background-color: rgb(178, 34, 34);
+    transition: 0.3s;
+}
+
+#boxTwo:hover{
+    zoom: 1.15;
 }
 
 a{
-    
     text-decoration: none;
     outline: none;
     color: var(--white);
@@ -95,6 +102,11 @@ a{
     font-weight: 500;
     border: solid var(--black) 8px;
     background-color: rgb(47, 4, 87);
+    transition: 0.3s;
+}
+
+#boxTree:hover{
+    zoom:1.15;
 }
 
 #boxFour {
@@ -108,8 +120,12 @@ a{
     font-weight: 500;
     border: solid var(--black) 8px;
     background-color: rgb(43, 255, 0);
+    transition: 0.3s;
 }
 
+#boxFour:hover{
+    zoom:1.15;
+}
 
 @media(max-width:720px) {
     .buttonMainClass {
